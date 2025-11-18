@@ -186,8 +186,7 @@ if submitted:
         allergies=allergies if allergies else "None"
     )
 
-    st.subheader("📝 Generated Prompt (for testing)")
-    st.code(filled_prompt)
+    
     
     with st.spinner("Generating diet plan"):
         response=llm.invoke(filled_prompt)
